@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build",
+  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/home/parallels/Warwick/year2/PLCS/PGPKeyManager/include -isystem /usr/local/lib/wx/include/gtk3-unicode-3.2 -isystem /usr/local/include/wx-3.2  -pthread -g -o CMakeFiles/PGPKeyManager.dir/src/App.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/App.cpp",
+  "file": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/App.cpp"
+},
+{
+  "directory": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build",
+  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/home/parallels/Warwick/year2/PLCS/PGPKeyManager/include -isystem /usr/local/lib/wx/include/gtk3-unicode-3.2 -isystem /usr/local/include/wx-3.2  -pthread -g -o CMakeFiles/PGPKeyManager.dir/src/GpgmeRepo.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/GpgmeRepo.cpp",
+  "file": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/GpgmeRepo.cpp"
+},
+{
+  "directory": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build",
+  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/home/parallels/Warwick/year2/PLCS/PGPKeyManager/include -isystem /usr/local/lib/wx/include/gtk3-unicode-3.2 -isystem /usr/local/include/wx-3.2  -pthread -g -o CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyList.cpp",
+  "file": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyList.cpp"
+},
+{
+  "directory": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build",
+  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/home/parallels/Warwick/year2/PLCS/PGPKeyManager/include -isystem /usr/local/lib/wx/include/gtk3-unicode-3.2 -isystem /usr/local/include/wx-3.2  -pthread -g -o CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/Main.cpp",
+  "file": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/Main.cpp"
+},
+{
+  "directory": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build",
+  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/home/parallels/Warwick/year2/PLCS/PGPKeyManager/include -isystem /usr/local/lib/wx/include/gtk3-unicode-3.2 -isystem /usr/local/include/wx-3.2  -pthread -g -o CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/NewKeyForm.cpp",
+  "file": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/NewKeyForm.cpp"
+}
+]
