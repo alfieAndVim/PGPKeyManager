@@ -1,7 +1,7 @@
-CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o: \
- /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/Main.cpp \
+CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.o: \
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/SignKeyForm.cpp \
  /usr/include/stdc-predef.h \
- /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/Main.h \
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/SignKeyForm.h \
  /usr/local/include/wx-3.2/wx/wx.h /usr/local/include/wx-3.2/wx/defs.h \
  /usr/local/include/wx-3.2/wx/platform.h \
  /usr/local/include/wx-3.2/wx/compiler.h \
@@ -475,23 +475,11 @@ CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o: \
  /usr/local/include/wx-3.2/wx/filectrl.h \
  /usr/local/include/wx-3.2/wx/mdi.h \
  /usr/local/include/wx-3.2/wx/gtk/mdi.h \
- /usr/local/include/wx-3.2/wx/artprov.h \
- /usr/local/include/wx-3.2/wx/textfile.h \
- /usr/local/include/wx-3.2/wx/textbuf.h \
- /usr/local/include/wx-3.2/wx/convauto.h \
- /usr/local/include/wx-3.2/wx/file.h /usr/local/include/wx-3.2/wx/grid.h \
- /usr/local/include/wx-3.2/wx/generic/grid.h \
- /usr/local/include/wx-3.2/wx/generic/grideditors.h \
- /usr/local/include/wx-3.2/wx/generic/gridctrl.h \
- /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/GpgmeRepo.h \
- /usr/local/include/gpgme.h /usr/include/x86_64-linux-gnu/gpg-error.h \
- /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/KeyParms.h \
- /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/SignKeyForm.h \
  /usr/local/include/wx-3.2/wx/datectrl.h \
  /usr/local/include/wx-3.2/wx/datetimectrl.h \
  /usr/local/include/wx-3.2/wx/generic/datectrl.h \
  /usr/local/include/wx-3.2/wx/compositewin.h \
- /usr/local/include/wx-3.2/wx/dateevt.h \
- /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/NewKeyForm.h \
- /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/KeyList.h \
- /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/KeyOverview.h
+ /usr/local/include/wx-3.2/wx/dateevt.h /usr/local/include/gpgme.h \
+ /usr/include/x86_64-linux-gnu/gpg-error.h \
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/GpgmeRepo.h \
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/KeyParms.h

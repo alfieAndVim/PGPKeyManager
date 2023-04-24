@@ -595,6 +595,54 @@ src/KeyList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.s
 .PHONY : src/KeyList.cpp.s
 
+src/KeyOverview.o: src/KeyOverview.cpp.o
+.PHONY : src/KeyOverview.o
+
+# target to build an object file
+src/KeyOverview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.o
+.PHONY : src/KeyOverview.cpp.o
+
+src/KeyOverview.i: src/KeyOverview.cpp.i
+.PHONY : src/KeyOverview.i
+
+# target to preprocess a source file
+src/KeyOverview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.i
+.PHONY : src/KeyOverview.cpp.i
+
+src/KeyOverview.s: src/KeyOverview.cpp.s
+.PHONY : src/KeyOverview.s
+
+# target to generate assembly for a file
+src/KeyOverview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.s
+.PHONY : src/KeyOverview.cpp.s
+
+src/KeyParms.o: src/KeyParms.cpp.o
+.PHONY : src/KeyParms.o
+
+# target to build an object file
+src/KeyParms.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.o
+.PHONY : src/KeyParms.cpp.o
+
+src/KeyParms.i: src/KeyParms.cpp.i
+.PHONY : src/KeyParms.i
+
+# target to preprocess a source file
+src/KeyParms.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.i
+.PHONY : src/KeyParms.cpp.i
+
+src/KeyParms.s: src/KeyParms.cpp.s
+.PHONY : src/KeyParms.s
+
+# target to generate assembly for a file
+src/KeyParms.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.s
+.PHONY : src/KeyParms.cpp.s
+
 src/Main.o: src/Main.cpp.o
 .PHONY : src/Main.o
 
@@ -642,6 +690,30 @@ src/NewKeyForm.s: src/NewKeyForm.cpp.s
 src/NewKeyForm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.s
 .PHONY : src/NewKeyForm.cpp.s
+
+src/SignKeyForm.o: src/SignKeyForm.cpp.o
+.PHONY : src/SignKeyForm.o
+
+# target to build an object file
+src/SignKeyForm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.o
+.PHONY : src/SignKeyForm.cpp.o
+
+src/SignKeyForm.i: src/SignKeyForm.cpp.i
+.PHONY : src/SignKeyForm.i
+
+# target to preprocess a source file
+src/SignKeyForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.i
+.PHONY : src/SignKeyForm.cpp.i
+
+src/SignKeyForm.s: src/SignKeyForm.cpp.s
+.PHONY : src/SignKeyForm.s
+
+# target to generate assembly for a file
+src/SignKeyForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.s
+.PHONY : src/SignKeyForm.cpp.s
 
 # Help Target
 help:
@@ -692,12 +764,21 @@ help:
 	@echo "... src/KeyList.o"
 	@echo "... src/KeyList.i"
 	@echo "... src/KeyList.s"
+	@echo "... src/KeyOverview.o"
+	@echo "... src/KeyOverview.i"
+	@echo "... src/KeyOverview.s"
+	@echo "... src/KeyParms.o"
+	@echo "... src/KeyParms.i"
+	@echo "... src/KeyParms.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
 	@echo "... src/NewKeyForm.o"
 	@echo "... src/NewKeyForm.i"
 	@echo "... src/NewKeyForm.s"
+	@echo "... src/SignKeyForm.o"
+	@echo "... src/SignKeyForm.i"
+	@echo "... src/SignKeyForm.s"
 .PHONY : help
 
 

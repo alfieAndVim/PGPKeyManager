@@ -123,7 +123,10 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6,
+				7
 			]
 		}
 	],
@@ -199,7 +202,10 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6,
+				7
 			]
 		}
 	],
@@ -226,6 +232,18 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "src/KeyOverview.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/KeyParms.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "src/Main.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -233,6 +251,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/NewKeyForm.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/SignKeyForm.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

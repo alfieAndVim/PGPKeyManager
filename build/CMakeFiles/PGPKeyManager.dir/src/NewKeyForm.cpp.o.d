@@ -474,4 +474,12 @@ CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o: \
  /usr/local/include/wx-3.2/wx/gtk/filectrl.h \
  /usr/local/include/wx-3.2/wx/filectrl.h \
  /usr/local/include/wx-3.2/wx/mdi.h \
- /usr/local/include/wx-3.2/wx/gtk/mdi.h
+ /usr/local/include/wx-3.2/wx/gtk/mdi.h \
+ /usr/local/include/wx-3.2/wx/datectrl.h \
+ /usr/local/include/wx-3.2/wx/datetimectrl.h \
+ /usr/local/include/wx-3.2/wx/generic/datectrl.h \
+ /usr/local/include/wx-3.2/wx/compositewin.h \
+ /usr/local/include/wx-3.2/wx/dateevt.h /usr/local/include/gpgme.h \
+ /usr/include/x86_64-linux-gnu/gpg-error.h \
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/KeyParms.h \
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/GpgmeRepo.h

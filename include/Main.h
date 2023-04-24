@@ -1,6 +1,11 @@
 #pragma once
 #include <wx/wx.h>
 #include <wx/artprov.h>
+#include <wx/textfile.h>
+#include <wx/grid.h>
+#include <vector>
+#include <GpgmeRepo.h>
+#include <SignKeyForm.h>
 
 class Main : public wxFrame
 {
@@ -10,9 +15,16 @@ public:
 
     void OnQuit(wxCommandEvent& event);
     void OnNew(wxCommandEvent& event);
+    void OnImport(wxCommandEvent& event);
+    void OnSign(wxCommandEvent& event);
+    void OnKeysChanged();
 
-//private:
+    int KeySelected = -1;
 
+private:
+    vector<gpgme_key_t> keys;
+    wxGrid *keyList = nullptr;
+    wxBoxSizer *sizer = nullptr;
     
 
     //wxButton *m_button1 = nullptr;
