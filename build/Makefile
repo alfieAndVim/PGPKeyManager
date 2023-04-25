@@ -571,6 +571,30 @@ src/GpgmeRepo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/GpgmeRepo.cpp.s
 .PHONY : src/GpgmeRepo.cpp.s
 
+src/KeyCreationThread.o: src/KeyCreationThread.cpp.o
+.PHONY : src/KeyCreationThread.o
+
+# target to build an object file
+src/KeyCreationThread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.o
+.PHONY : src/KeyCreationThread.cpp.o
+
+src/KeyCreationThread.i: src/KeyCreationThread.cpp.i
+.PHONY : src/KeyCreationThread.i
+
+# target to preprocess a source file
+src/KeyCreationThread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.i
+.PHONY : src/KeyCreationThread.cpp.i
+
+src/KeyCreationThread.s: src/KeyCreationThread.cpp.s
+.PHONY : src/KeyCreationThread.s
+
+# target to generate assembly for a file
+src/KeyCreationThread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.s
+.PHONY : src/KeyCreationThread.cpp.s
+
 src/KeyList.o: src/KeyList.cpp.o
 .PHONY : src/KeyList.o
 
@@ -691,6 +715,30 @@ src/NewKeyForm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.s
 .PHONY : src/NewKeyForm.cpp.s
 
+src/Progress.o: src/Progress.cpp.o
+.PHONY : src/Progress.o
+
+# target to build an object file
+src/Progress.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.o
+.PHONY : src/Progress.cpp.o
+
+src/Progress.i: src/Progress.cpp.i
+.PHONY : src/Progress.i
+
+# target to preprocess a source file
+src/Progress.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.i
+.PHONY : src/Progress.cpp.i
+
+src/Progress.s: src/Progress.cpp.s
+.PHONY : src/Progress.s
+
+# target to generate assembly for a file
+src/Progress.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.s
+.PHONY : src/Progress.cpp.s
+
 src/SignKeyForm.o: src/SignKeyForm.cpp.o
 .PHONY : src/SignKeyForm.o
 
@@ -761,6 +809,9 @@ help:
 	@echo "... src/GpgmeRepo.o"
 	@echo "... src/GpgmeRepo.i"
 	@echo "... src/GpgmeRepo.s"
+	@echo "... src/KeyCreationThread.o"
+	@echo "... src/KeyCreationThread.i"
+	@echo "... src/KeyCreationThread.s"
 	@echo "... src/KeyList.o"
 	@echo "... src/KeyList.i"
 	@echo "... src/KeyList.s"
@@ -776,6 +827,9 @@ help:
 	@echo "... src/NewKeyForm.o"
 	@echo "... src/NewKeyForm.i"
 	@echo "... src/NewKeyForm.s"
+	@echo "... src/Progress.o"
+	@echo "... src/Progress.i"
+	@echo "... src/Progress.s"
 	@echo "... src/SignKeyForm.o"
 	@echo "... src/SignKeyForm.i"
 	@echo "... src/SignKeyForm.s"

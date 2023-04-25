@@ -14,7 +14,7 @@ string KeyParms::getParms()
     parms += "Name-Real: " + keyName + "\n";
     parms += "Name-Comment: " + keyComment + "\n";
     parms += "Name-Email: " + keyEmail + "\n";
-    parms += "Expire-Date: " + to_string(keyExpiry) + "\n";
+    parms += "Expire-Date: " + keyExpiry + "\n";
     parms += "Passphrase: " + keyPassphrase + "\n";
     parms += parmsFooter;
     return parms;

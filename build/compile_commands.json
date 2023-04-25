@@ -11,6 +11,11 @@
 },
 {
   "directory": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build",
+  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/home/parallels/Warwick/year2/PLCS/PGPKeyManager/include -isystem /usr/local/lib/wx/include/gtk3-unicode-3.2 -isystem /usr/local/include/wx-3.2  -pthread -g -o CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyCreationThread.cpp",
+  "file": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyCreationThread.cpp"
+},
+{
+  "directory": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build",
   "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/home/parallels/Warwick/year2/PLCS/PGPKeyManager/include -isystem /usr/local/lib/wx/include/gtk3-unicode-3.2 -isystem /usr/local/include/wx-3.2  -pthread -g -o CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyList.cpp",
   "file": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyList.cpp"
 },
@@ -33,6 +38,11 @@
   "directory": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build",
   "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/home/parallels/Warwick/year2/PLCS/PGPKeyManager/include -isystem /usr/local/lib/wx/include/gtk3-unicode-3.2 -isystem /usr/local/include/wx-3.2  -pthread -g -o CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/NewKeyForm.cpp",
   "file": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/NewKeyForm.cpp"
+},
+{
+  "directory": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build",
+  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/home/parallels/Warwick/year2/PLCS/PGPKeyManager/include -isystem /usr/local/lib/wx/include/gtk3-unicode-3.2 -isystem /usr/local/include/wx-3.2  -pthread -g -o CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/Progress.cpp",
+  "file": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/Progress.cpp"
 },
 {
   "directory": "/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build",

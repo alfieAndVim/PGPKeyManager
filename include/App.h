@@ -3,6 +3,8 @@
 #include <wx/wx.h>
 #include <Main.h>
 
+wxDECLARE_EVENT(key_creationEVT_PROCESS_COMPLETED, wxThreadEvent);
+
 class App : public wxApp
 {
 public:

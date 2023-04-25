@@ -482,4 +482,19 @@ CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o: \
  /usr/local/include/wx-3.2/wx/dateevt.h /usr/local/include/gpgme.h \
  /usr/include/x86_64-linux-gnu/gpg-error.h \
  /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/KeyParms.h \
- /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/GpgmeRepo.h
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/GpgmeRepo.h \
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/KeyCreationThread.h \
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/App.h \
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/Main.h \
+ /usr/local/include/wx-3.2/wx/artprov.h \
+ /usr/local/include/wx-3.2/wx/textfile.h \
+ /usr/local/include/wx-3.2/wx/textbuf.h \
+ /usr/local/include/wx-3.2/wx/convauto.h \
+ /usr/local/include/wx-3.2/wx/file.h /usr/local/include/wx-3.2/wx/grid.h \
+ /usr/local/include/wx-3.2/wx/generic/grid.h \
+ /usr/local/include/wx-3.2/wx/generic/grideditors.h \
+ /usr/local/include/wx-3.2/wx/generic/gridctrl.h \
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/SignKeyForm.h \
+ /home/parallels/Warwick/year2/PLCS/PGPKeyManager/include/Progress.h \
+ /usr/local/include/wx-3.2/wx/activityindicator.h \
+ /usr/local/include/wx-3.2/wx/gtk/activityindicator.h

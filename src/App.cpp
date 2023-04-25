@@ -3,6 +3,8 @@
 
 wxIMPLEMENT_APP(App);
 
+wxDEFINE_EVENT(key_creationEVT_PROCESS_COMPLETED, wxThreadEvent);
+
 App::App()
 {
     //ctor

@@ -7,6 +7,8 @@
 #include <iostream>
 #include <KeyParms.h>
 #include <GpgmeRepo.h>
+#include <KeyCreationThread.h>
+#include <Progress.h>
 
 using namespace std;
 
@@ -17,6 +19,7 @@ public:
     ~NewKeyForm();
     gpgme_pubkey_algo_t ConvertAlgoStringToAlgorithm(string algo);
     void GenerateKeyPair(wxCommandEvent &event);
+    void OnKeyCreationThreadCompletion(wxThreadEvent &event);
     
     wxTextCtrl *name = nullptr;
     wxTextCtrl *email = nullptr;
@@ -26,4 +29,5 @@ public:
     wxDatePickerCtrl *keyExpiry = nullptr;
     wxTextCtrl *passphrase = nullptr;
     wxTextCtrl *passphraseConfirm = nullptr;
+    wxDialog *loadingIndicator = nullptr;
 };

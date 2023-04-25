@@ -2,6 +2,8 @@
 
 using namespace std;
 
+
+
 NewKeyForm::NewKeyForm() : wxDialog(NULL, wxID_ANY, "New Key", wxPoint(30,30), wxSize(800,600))
 {
 
@@ -120,7 +122,8 @@ void NewKeyForm::GenerateKeyPair(wxCommandEvent &event)
     string keyComment = comment->GetValue().ToStdString();
     gpgme_pubkey_algo_t keyAlgorithm = ConvertAlgoStringToAlgorithm(keyType->GetStringSelection().ToStdString());
     int keyLengthInt = stoi(keyLength->GetStringSelection().ToStdString());
-    long keyExpirationInt = keyExpiry->GetValue().GetTicks();
+    string keyExpiration = keyExpiry->GetValue().FormatISODate().ToStdString();
+    
     string keyPassphrase = passphrase->GetValue().ToStdString();
     string keyConfirmPassphrase = passphraseConfirm->GetValue().ToStdString();
 
@@ -136,25 +139,48 @@ void NewKeyForm::GenerateKeyPair(wxCommandEvent &event)
     keyParms.keyComment = keyComment;
     keyParms.keyAlgo = gpgme_pubkey_algo_name(keyAlgorithm);
     keyParms.keyLength = keyLengthInt;
-    keyParms.keyExpiry = keyExpirationInt;
+    keyParms.keyExpiry = keyExpiration;
     keyParms.keyPassphrase = keyPassphrase;
 
     cout << keyParms.getParms() << endl;
 
     GpgmeRepo gpgmeRepo;
 
+    KeyCreationThread *keyCreationThread = new KeyCreationThread();
 
-    
-    try {
-        gpgmeRepo.GenerateKeyPair(keyParms);
-    } catch (const std::exception& e) {
-        wxMessageBox(e.what(), "Error", wxOK | wxICON_ERROR);
+    keyCreationThread->parms = keyParms;
+    keyCreationThread->newKeyHandler = this;
+
+    if (keyCreationThread->Create() != wxTHREAD_NO_ERROR)
+    {
+        wxMessageBox("Can't create thread!", "Error", wxOK | wxICON_ERROR);
         return;
     }
 
-    wxMessageBox("Key pair generated successfully", "Success", wxOK | wxICON_INFORMATION);
-    Close();
+    if (keyCreationThread->Run() != wxTHREAD_NO_ERROR)
+    {
+        wxMessageBox("Can't create thread!", "Error", wxOK | wxICON_ERROR);
+        return;
+    }
+
     
+    this->loadingIndicator = new Progress(this);
+    this->loadingIndicator->CentreOnParent();
+    this->loadingIndicator->Show();
+
+    Bind(key_creationEVT_PROCESS_COMPLETED, &NewKeyForm::OnKeyCreationThreadCompletion, this);
+    
+
+    
+}
+
+void NewKeyForm::OnKeyCreationThreadCompletion(wxThreadEvent &event)
+{
+    this->loadingIndicator->Close();
+    
+
+    wxMessageBox("Key creation thread completed", "Success", wxOK | wxICON_INFORMATION);
+    Close();
 }
 
 NewKeyForm::~NewKeyForm()

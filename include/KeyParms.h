@@ -19,7 +19,7 @@ public:
     string keyEmail;
     string keyPassphrase;
     string keyComment;
-    long keyExpiry;
+    string keyExpiry;
 
     string parmsHeader = "<GnupgKeyParms format=\"internal\">\n";
     string parmsFooter = "</GnupgKeyParms>\n";
