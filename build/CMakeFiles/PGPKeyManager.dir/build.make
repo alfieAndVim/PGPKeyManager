@@ -97,10 +97,24 @@ CMakeFiles/PGPKeyManager.dir/src/GpgmeRepo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PGPKeyManager.dir/src/GpgmeRepo.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/GpgmeRepo.cpp -o CMakeFiles/PGPKeyManager.dir/src/GpgmeRepo.cpp.s
 
+CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.o: CMakeFiles/PGPKeyManager.dir/flags.make
+CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.o: ../src/KeyCreationThread.cpp
+CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.o: CMakeFiles/PGPKeyManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.o -MF CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.o.d -o CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyCreationThread.cpp
+
+CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyCreationThread.cpp > CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.i
+
+CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyCreationThread.cpp -o CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.s
+
 CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o: CMakeFiles/PGPKeyManager.dir/flags.make
 CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o: ../src/KeyList.cpp
 CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o: CMakeFiles/PGPKeyManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o -MF CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o.d -o CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyList.cpp
 
 CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.i: cmake_force
@@ -111,10 +125,38 @@ CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyList.cpp -o CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.s
 
+CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.o: CMakeFiles/PGPKeyManager.dir/flags.make
+CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.o: ../src/KeyOverview.cpp
+CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.o: CMakeFiles/PGPKeyManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.o -MF CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.o.d -o CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyOverview.cpp
+
+CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyOverview.cpp > CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.i
+
+CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyOverview.cpp -o CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.s
+
+CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.o: CMakeFiles/PGPKeyManager.dir/flags.make
+CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.o: ../src/KeyParms.cpp
+CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.o: CMakeFiles/PGPKeyManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.o -MF CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.o.d -o CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyParms.cpp
+
+CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyParms.cpp > CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.i
+
+CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/KeyParms.cpp -o CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.s
+
 CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o: CMakeFiles/PGPKeyManager.dir/flags.make
 CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o: ../src/Main.cpp
 CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o: CMakeFiles/PGPKeyManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o -MF CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o.d -o CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/Main.cpp
 
 CMakeFiles/PGPKeyManager.dir/src/Main.cpp.i: cmake_force
@@ -128,7 +170,7 @@ CMakeFiles/PGPKeyManager.dir/src/Main.cpp.s: cmake_force
 CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o: CMakeFiles/PGPKeyManager.dir/flags.make
 CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o: ../src/NewKeyForm.cpp
 CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o: CMakeFiles/PGPKeyManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o -MF CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o.d -o CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/NewKeyForm.cpp
 
 CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.i: cmake_force
@@ -139,25 +181,63 @@ CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/NewKeyForm.cpp -o CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.s
 
+CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.o: CMakeFiles/PGPKeyManager.dir/flags.make
+CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.o: ../src/Progress.cpp
+CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.o: CMakeFiles/PGPKeyManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.o -MF CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.o.d -o CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/Progress.cpp
+
+CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/Progress.cpp > CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.i
+
+CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/Progress.cpp -o CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.s
+
+CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.o: CMakeFiles/PGPKeyManager.dir/flags.make
+CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.o: ../src/SignKeyForm.cpp
+CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.o: CMakeFiles/PGPKeyManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.o -MF CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.o.d -o CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.o -c /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/SignKeyForm.cpp
+
+CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/SignKeyForm.cpp > CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.i
+
+CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/Warwick/year2/PLCS/PGPKeyManager/src/SignKeyForm.cpp -o CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.s
+
 # Object files for target PGPKeyManager
 PGPKeyManager_OBJECTS = \
 "CMakeFiles/PGPKeyManager.dir/src/App.cpp.o" \
 "CMakeFiles/PGPKeyManager.dir/src/GpgmeRepo.cpp.o" \
+"CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.o" \
 "CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o" \
+"CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.o" \
+"CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.o" \
 "CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o" \
-"CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o"
+"CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o" \
+"CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.o" \
+"CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.o"
 
 # External object files for target PGPKeyManager
 PGPKeyManager_EXTERNAL_OBJECTS =
 
 PGPKeyManager: CMakeFiles/PGPKeyManager.dir/src/App.cpp.o
 PGPKeyManager: CMakeFiles/PGPKeyManager.dir/src/GpgmeRepo.cpp.o
+PGPKeyManager: CMakeFiles/PGPKeyManager.dir/src/KeyCreationThread.cpp.o
 PGPKeyManager: CMakeFiles/PGPKeyManager.dir/src/KeyList.cpp.o
+PGPKeyManager: CMakeFiles/PGPKeyManager.dir/src/KeyOverview.cpp.o
+PGPKeyManager: CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.o
 PGPKeyManager: CMakeFiles/PGPKeyManager.dir/src/Main.cpp.o
 PGPKeyManager: CMakeFiles/PGPKeyManager.dir/src/NewKeyForm.cpp.o
+PGPKeyManager: CMakeFiles/PGPKeyManager.dir/src/Progress.cpp.o
+PGPKeyManager: CMakeFiles/PGPKeyManager.dir/src/SignKeyForm.cpp.o
 PGPKeyManager: CMakeFiles/PGPKeyManager.dir/build.make
 PGPKeyManager: CMakeFiles/PGPKeyManager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable PGPKeyManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/parallels/Warwick/year2/PLCS/PGPKeyManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable PGPKeyManager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PGPKeyManager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
