@@ -1,9 +1,11 @@
 #include <KeyParms.h>
 
+//Constructor for the KeyParms class
 KeyParms::KeyParms()
 {
 }
 
+//Returns the key parameters as a string
 string KeyParms::getParms()
 {
     string parms = parmsHeader;
@@ -20,6 +22,7 @@ string KeyParms::getParms()
     return parms;
 }
 
+//Destructor for the KeyParms class
 KeyParms::~KeyParms()
 {
 }

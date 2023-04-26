@@ -1,5 +1,7 @@
+//Ensuring the header file is included only once during compilation
 #pragma once
 
+//Including the necessary header files
 #include <gpgme.h>
 #include <iostream>
 #include <wx/wx.h>
@@ -9,8 +11,10 @@
 #include <App.h>
 #include <NewKeyForm.h>
 
+//Using the standard namespace
 using namespace std;
 
+//Defining the KeyCreationThread class
 class KeyCreationThread : public wxThread
 {
 public:
@@ -20,5 +24,6 @@ public:
     wxDialog *newKeyHandler;
 
 protected:
+    //Overriding the wxThread::Entry method
     virtual wxThread::ExitCode Entry();
 };
