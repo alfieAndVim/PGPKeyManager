@@ -102,10 +102,12 @@ void Main::OnImport(wxCommandEvent& WXUNUSED(event)){
 //Event function to show the sign key window
 void Main::OnSign(wxCommandEvent& WXUNUSED(event)){
     cout << "Sign" << endl;
+    //Shows a new sign key window
     wxDialog *dialog = new SignKeyForm();
-
     dialog->ShowModal();
+    //Deletes the dialog object
     delete dialog;
+    //Updates the key list
     this->OnKeysChanged();
 }
 

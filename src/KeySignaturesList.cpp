@@ -33,12 +33,31 @@ KeySignaturesList::KeySignaturesList(wxWindow *parent, gpgme_key_t key) : wxGrid
         this->SetCellValue(i, 0, signatures[i].signatureName);
         this->SetCellValue(i, 1, signatures[i].signatureEmail);
         this->SetCellValue(i, 2, signatures[i].signatureComment);
-        this->SetCellValue(i, 3, to_string(signatures[i].signatureExpiration));
+        this->SetCellValue(i, 3, ConvertTimestampToDate(signatures[i].signatureExpiration));
     }
 
     //Setting the grid properties
     this->AutoSize();
     this->HideRowLabels();
+}
+
+string KeySignaturesList::ConvertTimestampToDate(long timestamp) {
+
+    //Checking if the timestamp is 0
+    if(timestamp == 0) return "Never";
+
+    //Creating a time_t object
+    time_t time = timestamp;
+    //Creating a tm object
+    struct tm *timeinfo;
+    //Setting the timeinfo object to the localtime of the time object
+    timeinfo = localtime(&time);
+    //Creating a char array
+    char buffer[80];
+    //Formatting the timeinfo object to the buffer
+    strftime(buffer, 80, "%d-%m-%Y", timeinfo);
+    //Returning the buffer
+    return buffer;
 }
 
 KeySignaturesList::~KeySignaturesList() {
