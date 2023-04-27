@@ -6,6 +6,7 @@
 #include <GpgmeRepo.h>
 #include <wx/wx.h>
 #include <Main.h>
+#include <KeySignaturesList.h>
 #include <fstream>
 
 //Using the standard namespace
@@ -14,7 +15,7 @@ using namespace std;
 //Defining the KeyOverview class
 class KeyOverview : public wxFrame {
 public:
-    KeyOverview(string keyId, wxWindow *parent);
+    KeyOverview(gpgme_key_t key, wxWindow *parent);
     ~KeyOverview();
 
     //Defining the KeyOverview functions

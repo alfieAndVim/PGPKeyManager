@@ -6,6 +6,8 @@
 
 //Defining the thread event for the key creation process
 wxDECLARE_EVENT(key_creationEVT_PROCESS_COMPLETED, wxThreadEvent);
+//Defining the thread event for the key retrieval process
+wxDECLARE_EVENT(key_retrievalEVT_PROCESS_COMPLETED, wxThreadEvent);
 
 //Defining the app class
 class App : public wxApp

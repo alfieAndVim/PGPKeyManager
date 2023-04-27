@@ -1,4 +1,4 @@
-// Including headers for the KeyCreationThread class and the App class
+// Including headers for the KeyCreationThread class
 #include <KeyCreationThread.h>
 
 //Constructor for the KeyCreationThread class as a detached thread

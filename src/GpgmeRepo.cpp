@@ -68,6 +68,8 @@ vector<gpgme_key_t> GpgmeRepo::GetKeys()
     //declaring the vector of keys
     vector<gpgme_key_t> keys;
 
+    gpgme_set_keylist_mode(ctx, GPGME_KEYLIST_MODE_SIGS);
+
     //starting the key list operation with the context
     err = gpgme_op_keylist_start(ctx, NULL, 0);
     if (err != GPG_ERR_NO_ERROR)
@@ -275,6 +277,7 @@ gpgme_import_result_t GpgmeRepo::ImportKey(string filePath)
 //function to sign a key given the signing and key objects
 void GpgmeRepo::SignKey(gpgme_key_t key, gpgme_key_t signingKey, long expiry)
 {
+
     //declaring the error variable
     gpgme_error_t err;
 

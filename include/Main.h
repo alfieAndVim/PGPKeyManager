@@ -13,6 +13,8 @@
 #include <KeyList.h>
 #include <iostream>
 #include <gpgme.h>
+#include <Progress.h>
+#include <KeyRetrievalThread.h>
 
 //Defining the Main class
 class Main : public wxFrame
@@ -27,6 +29,7 @@ public:
     void OnImport(wxCommandEvent& event);
     void OnSign(wxCommandEvent& event);
     void OnKeysChanged();
+    void OnKeysRetrieved(wxThreadEvent& event);
 
     //Defining the Main variables
     int KeySelected = -1;
@@ -36,5 +39,5 @@ private:
     vector<gpgme_key_t> keys;
     wxGrid *keyList = nullptr;
     wxBoxSizer *sizer = nullptr;
-
+    wxActivityIndicator *progress = nullptr;
 };
