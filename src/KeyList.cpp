@@ -53,7 +53,7 @@ KeyList::KeyList(vector<gpgme_key_t> keys, wxWindow *parent) : wxGrid(parent, wx
 //Function to show an overview of a key
 void KeyList::ShowKey(gpgme_key_t key) {
     //Creating a new KeyOverview object
-    KeyOverview *overview = new KeyOverview(key->subkeys->keyid, NULL);
+    KeyOverview *overview = new KeyOverview(key, this->GetParent());
     //Binding the close event of the overview window to a lambda function
     overview->Bind(wxEVT_CLOSE_WINDOW, [=](wxCloseEvent& event) {
 

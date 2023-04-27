@@ -5,7 +5,7 @@
 using namespace std;
 
 
-KeyOverview::KeyOverview(string keyId, wxWindow *parent) : wxFrame(parent, wxID_ANY, "Key Overview", wxDefaultPosition, wxSize(500, 400))
+KeyOverview::KeyOverview(gpgme_key_t key, wxWindow *parent) : wxFrame(parent, wxID_ANY, "Key Overview", wxDefaultPosition, wxSize(600, 400))
 {
     //Creating a new instance of the GpgmeRepo class
     GpgmeRepo gpgmeRepo;
@@ -14,25 +14,23 @@ KeyOverview::KeyOverview(string keyId, wxWindow *parent) : wxFrame(parent, wxID_
     gpgme_key_t publicKey;
     gpgme_key_t secretKey;
 
+    char *keyId;
+
     //Defining the hasSecretKey variable
     bool hasSecretKey = false;
 
     //Binding the CloseWindow function to the wxEVT_CLOSE_WINDOW event
     Bind(wxEVT_CLOSE_WINDOW, &KeyOverview::CloseWindow, this);
 
-    //Getting the public key by the key ID
-    try {
-        this->publicKey = gpgmeRepo.GetKeyById(keyId);
-
-    } catch (const gpgme_error_t &e) {
-        wxMessageBox(gpgme_strerror(e), "Error", wxOK | wxICON_ERROR);
-        this->Close();
-        return;
-    }
+    //Setting the public key
+    this->publicKey = key;
+    //Setting the key ID
+    keyId = key->subkeys->keyid;
+    
 
     //Getting the secret key by the key ID
     try {
-        this->secretKey = gpgmeRepo.GetSecretKeyById(keyId);
+        this->secretKey = gpgmeRepo.GetSecretKeyById(key->subkeys->keyid);
         this->hasSecretKey = true;
         
     } catch (gpgme_error_t &e) {
@@ -113,6 +111,8 @@ KeyOverview::KeyOverview(string keyId, wxWindow *parent) : wxFrame(parent, wxID_
     //Creating a wxbutton object to delete the key
     wxButton *deleteKeyButton = new wxButton(scrolledWindow, wxID_ANY, "Delete Key");
 
+    wxGrid *keySignatures = new KeySignaturesList(scrolledWindow, this->publicKey);
+
     //Checks if the public key has a secret key and disables the secret key buttons as necessary
     if (!this->hasSecretKey) {
         showSecretKeyButton->Disable();
@@ -150,6 +150,7 @@ KeyOverview::KeyOverview(string keyId, wxWindow *parent) : wxFrame(parent, wxID_
     sizer->Add(savePublicKeyButton, 0, wxALL, 5);
     sizer->Add(saveSecretKeyButton, 0, wxALL, 5);
     sizer->Add(deleteKeyButton, 0, wxALL, 5);
+    sizer->Add(keySignatures, 0, wxALL, 5);
 
     //Sets the sizer to the scrolled window and the scrolled window to the views sizer
     scrolledWindow->SetSizer(sizer);

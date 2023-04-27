@@ -667,6 +667,54 @@ src/KeyParms.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyParms.cpp.s
 .PHONY : src/KeyParms.cpp.s
 
+src/KeyRetrievalThread.o: src/KeyRetrievalThread.cpp.o
+.PHONY : src/KeyRetrievalThread.o
+
+# target to build an object file
+src/KeyRetrievalThread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyRetrievalThread.cpp.o
+.PHONY : src/KeyRetrievalThread.cpp.o
+
+src/KeyRetrievalThread.i: src/KeyRetrievalThread.cpp.i
+.PHONY : src/KeyRetrievalThread.i
+
+# target to preprocess a source file
+src/KeyRetrievalThread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyRetrievalThread.cpp.i
+.PHONY : src/KeyRetrievalThread.cpp.i
+
+src/KeyRetrievalThread.s: src/KeyRetrievalThread.cpp.s
+.PHONY : src/KeyRetrievalThread.s
+
+# target to generate assembly for a file
+src/KeyRetrievalThread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeyRetrievalThread.cpp.s
+.PHONY : src/KeyRetrievalThread.cpp.s
+
+src/KeySignaturesList.o: src/KeySignaturesList.cpp.o
+.PHONY : src/KeySignaturesList.o
+
+# target to build an object file
+src/KeySignaturesList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeySignaturesList.cpp.o
+.PHONY : src/KeySignaturesList.cpp.o
+
+src/KeySignaturesList.i: src/KeySignaturesList.cpp.i
+.PHONY : src/KeySignaturesList.i
+
+# target to preprocess a source file
+src/KeySignaturesList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeySignaturesList.cpp.i
+.PHONY : src/KeySignaturesList.cpp.i
+
+src/KeySignaturesList.s: src/KeySignaturesList.cpp.s
+.PHONY : src/KeySignaturesList.s
+
+# target to generate assembly for a file
+src/KeySignaturesList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PGPKeyManager.dir/build.make CMakeFiles/PGPKeyManager.dir/src/KeySignaturesList.cpp.s
+.PHONY : src/KeySignaturesList.cpp.s
+
 src/Main.o: src/Main.cpp.o
 .PHONY : src/Main.o
 
@@ -821,6 +869,12 @@ help:
 	@echo "... src/KeyParms.o"
 	@echo "... src/KeyParms.i"
 	@echo "... src/KeyParms.s"
+	@echo "... src/KeyRetrievalThread.o"
+	@echo "... src/KeyRetrievalThread.i"
+	@echo "... src/KeyRetrievalThread.s"
+	@echo "... src/KeySignaturesList.o"
+	@echo "... src/KeySignaturesList.i"
+	@echo "... src/KeySignaturesList.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"

@@ -7,6 +7,8 @@ wxIMPLEMENT_APP(App);
 
 //defining the event for the key creation process
 wxDEFINE_EVENT(key_creationEVT_PROCESS_COMPLETED, wxThreadEvent);
+//defining the event for the key retrieval process
+wxDEFINE_EVENT(key_retrievalEVT_PROCESS_COMPLETED, wxThreadEvent);
 
 //constructor and destructor for the app class
 App::App()

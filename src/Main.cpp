@@ -11,10 +11,24 @@ Main::Main() : wxFrame(NULL, wxID_ANY, "PGPKeyManager", wxPoint(30,30), wxSize(8
     //Creating a new GpgmeRepo object
     GpgmeRepo repo;
     //Getting the keys from the repo
-    vector<gpgme_key_t> keys = repo.GetKeys();
+    //vector<gpgme_key_t> keys = repo.GetKeys();
+
+    KeyRetrievalThread *thread = new KeyRetrievalThread();
+    thread->keyHandler = this;
+
+    if(thread->Create() != wxTHREAD_NO_ERROR)
+    {
+        wxLogError("Can't create thread!");
+    }
+    else
+    {
+        thread->Run();
+    }
 
     //Setting the keys property
-    this->keys = keys;
+    //this->keys = keys;
+
+    this->keys = vector<gpgme_key_t>();
 
     //Creating a new wxBoxSizer object
     this->sizer = new wxBoxSizer(wxVERTICAL);
@@ -44,6 +58,8 @@ Main::Main() : wxFrame(NULL, wxID_ANY, "PGPKeyManager", wxPoint(30,30), wxSize(8
     Connect(wxID_NEW, wxEVT_COMMAND_TOOL_CLICKED, wxCommandEventHandler(Main::OnNew));
     Connect(wxID_ADD, wxEVT_COMMAND_TOOL_CLICKED, wxCommandEventHandler(Main::OnImport));
     Connect(wxID_APPLY, wxEVT_COMMAND_TOOL_CLICKED, wxCommandEventHandler(Main::OnSign));
+
+    Bind(key_retrievalEVT_PROCESS_COMPLETED, &Main::OnKeysRetrieved, this);
 
     //Updating the layout
     Layout();   
@@ -86,31 +102,51 @@ void Main::OnImport(wxCommandEvent& WXUNUSED(event)){
 //Event function to show the sign key window
 void Main::OnSign(wxCommandEvent& WXUNUSED(event)){
     cout << "Sign" << endl;
+    //Shows a new sign key window
     wxDialog *dialog = new SignKeyForm();
-
     dialog->ShowModal();
+    //Deletes the dialog object
     delete dialog;
+    //Updates the key list
     this->OnKeysChanged();
 }
 
 //Event function to update the key list
 void Main::OnKeysChanged(){
 
-    GpgmeRepo gpgmeRepo;
+    //Creates a new thread to retrieve the keys
+    KeyRetrievalThread *thread = new KeyRetrievalThread();
+    //Sets the key handler to this class
+    thread->keyHandler = this;
 
-    //Gets the keys from the repo
-    this->keys = gpgmeRepo.GetKeys();
-    //Removes the key list from the sizer
+    //If the thread can't be created, log an error
+    if(thread->Create() != wxTHREAD_NO_ERROR)
+    {
+        wxLogError("Can't create thread!");
+    }
+    else
+    {   
+        //Run the thread
+        thread->Run();
+    }
+}
+
+//Event function to show the key details window
+void Main::OnKeysRetrieved(wxThreadEvent& event)
+{
+    //Gets the keys from the event payload
+    vector<gpgme_key_t> keys;
+    keys = event.GetPayload<vector<gpgme_key_t> >();
+
+    //Removes the old key list from the sizer and replaces it with a new one
     this->sizer->Remove(1);
-    //Deletes the old key list
     delete this->keyList;
-    //Creates a new key list
-    this->keyList = new KeyList(this->keys, this);
-    //Adds the new key list to the sizer
+    this->keyList = new KeyList(keys, this);
     this->sizer->Add(this->keyList, 1, wxEXPAND);
-    //Updates the layout
     SetSizer(this->sizer);
+    //Updates the layout
     Layout();
+
 }
 
 

@@ -26,6 +26,7 @@ public:
     gpgme_key_t GetKeyById(string id);
     gpgme_key_t GetSecretKeyById(string id);
     string GetKeyBlock(gpgme_key_t key, bool secret = false);
+    vector<gpgme_key_sig_t> GetKeySignatures(gpgme_key_t key);
     void DeleteKey(gpgme_key_t key);
     gpgme_import_result_t ImportKey(string filePath);
     void SignKey(gpgme_key_t key, gpgme_key_t signingKey, long expiry);
