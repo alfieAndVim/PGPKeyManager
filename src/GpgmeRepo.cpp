@@ -1,3 +1,11 @@
+///////////////////////////////////////////////////////////
+//Progamming Languages in Cyber Security - CW2 - U2138875//
+///////////////////////////////////////////////////////////
+
+
+//Function research derived from GnuPG (2023b)
+
+
 //including header file for the gpgme repo class
 #include <GpgmeRepo.h>
 
@@ -192,6 +200,8 @@ string GpgmeRepo::GetKeyBlock(gpgme_key_t key, bool secret)
     {
         throw err;
     }
+
+    //Use of data buffer derived from Kawashima (2016)
 
     //getting the size of the data object
     size = gpgme_data_seek(data, 0, SEEK_END);

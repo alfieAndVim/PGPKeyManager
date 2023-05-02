@@ -1,3 +1,7 @@
+///////////////////////////////////////////////////////////
+//Progamming Languages in Cyber Security - CW2 - U2138875//
+///////////////////////////////////////////////////////////
+
 #include <KeySignaturesList.h>
 
 KeySignaturesList::KeySignaturesList(wxWindow *parent, gpgme_key_t key) : wxGrid(parent, wxID_ANY) {

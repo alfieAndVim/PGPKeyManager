@@ -1,3 +1,7 @@
+///////////////////////////////////////////////////////////
+//Progamming Languages in Cyber Security - CW2 - U2138875//
+///////////////////////////////////////////////////////////
+
 #include <KeyParms.h>
 
 //Constructor for the KeyParms class
@@ -5,9 +9,11 @@ KeyParms::KeyParms()
 {
 }
 
-//Returns the key parameters as a string
+//Returns the key parameters as a string 
 string KeyParms::getParms()
 {
+
+    //Use of keyparms format derived from Kawashima (2016)
     string parms = parmsHeader;
     parms += "Key-Type: " + keyAlgo + "\n";
     parms += "Key-Length: " + to_string(keyLength) + "\n";

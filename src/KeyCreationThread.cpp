@@ -1,6 +1,10 @@
 // Including headers for the KeyCreationThread class
 #include <KeyCreationThread.h>
 
+///////////////////////////////////////////////////////////
+//Progamming Languages in Cyber Security - CW2 - U2138875//
+///////////////////////////////////////////////////////////
+
 //Constructor for the KeyCreationThread class as a detached thread
 KeyCreationThread::KeyCreationThread() : wxThread(wxTHREAD_DETACHED)
 {
